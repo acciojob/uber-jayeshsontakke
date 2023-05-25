@@ -10,7 +10,7 @@ public class Customer {
 @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int customerId;
-private String mobNo;
+private String mobile;
 private String password;
 @OneToMany(mappedBy = "customer",cascade = CascadeType.ALL)
 private List<TripBooking>tripBookingList;
@@ -20,7 +20,7 @@ private List<TripBooking>tripBookingList;
 
     public Customer(int customerId, String mobNo, String password, List<TripBooking> tripBookingList) {
         this.customerId = customerId;
-        this.mobNo = mobNo;
+        this.mobile = mobNo;
         this.password = password;
         this.tripBookingList = tripBookingList;
     }
@@ -34,11 +34,11 @@ private List<TripBooking>tripBookingList;
     }
 
     public String getMobNo() {
-        return mobNo;
+        return mobile;
     }
 
     public void setMobNo(String mobNo) {
-        this.mobNo = mobNo;
+        this.mobile = mobNo;
     }
 
     public String getPassword() {
