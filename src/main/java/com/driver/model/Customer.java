@@ -33,7 +33,7 @@ private List<TripBooking>tripBookingList;
         this.customerId = customerId;
     }
 
-    public String getMobNo() {
+    public String getMobile() {
         return mobile;
     }
 
