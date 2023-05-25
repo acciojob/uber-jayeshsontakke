@@ -37,7 +37,7 @@ private List<TripBooking>tripBookingList;
         return mobile;
     }
 
-    public void setMobNo(String mobNo) {
+    public void setMobile(String mobNo) {
         this.mobile = mobNo;
     }
 
